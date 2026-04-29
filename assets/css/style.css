@@ -8,49 +8,65 @@
  */
 
 
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+
 :root {
 
-  /* Claude Colors */
-  --crail: #C15F3C;
-  --cloudy: #B1ADA1;
-  --pampas: #F4F3EE;
-  --white: #FFFFFF;
+  /**
+   * colors
+   */
 
-  /* gradients */
-  --bg-gradient-onyx: linear-gradient(to bottom right, #B1ADA1 3%, #F4F3EE 97%);
-  --bg-gradient-jet: linear-gradient(to bottom right, rgba(177,173,161,0.25) 0%, rgba(177,173,161,0) 100%), #F4F3EE;
-  --bg-gradient-yellow-1: linear-gradient(to bottom right, #C15F3C 0%, rgba(193,95,60,0) 50%);
-  --bg-gradient-yellow-2: linear-gradient(135deg, rgba(193,95,60,0.25) 0%, rgba(193,95,60,0) 60%), #F4F3EE;
+  /* gradient */
 
-  --border-gradient-onyx: linear-gradient(to bottom right, #B1ADA1 0%, rgba(177,173,161,0) 50%);
-  --text-gradient-yellow: linear-gradient(to right, #C15F3C, #B1ADA1);
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+    hsl(45, 100%, 71%) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(35, 100%, 68%, 0) 59.86%
+  ), hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 25%) 0%, 
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right, 
+    hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%)
+  );
 
   /* solid */
-  --jet: #B1ADA1;
-  --onyx: #F4F3EE;
-  --eerie-black-1: #F4F3EE;
-  --eerie-black-2: #FFFFFF;
-  --smoky-black: #F4F3EE;
 
-  --white-1: #FFFFFF;
-  --white-2: #FFFFFF;
-
-  --orange-yellow-crayola: #C15F3C;
-  --vegas-gold: #B1ADA1;
-
-  --light-gray: #B1ADA1;
-  --light-gray-70: rgba(177,173,161,0.7);
-
-  --bittersweet-shimmer: #C15F3C;
-}
-
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+	
   /**
    * typography
    */
